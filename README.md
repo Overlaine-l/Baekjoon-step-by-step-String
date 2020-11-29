@@ -7,7 +7,7 @@
 - 문제  
 N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램을 작성하시오.
 
-- Code :  
+- Code 
 ~~~
 def linesum(array, N):    # array : given string, N : the number of integers
     string= str(array)
@@ -18,6 +18,22 @@ def linesum(array, N):    # array : given string, N : the number of integers
         sum += int(num)
     return sum
 ~~~
-array로 표현되는 input string과 N이 같은지 비교해보고, 같으면 결과를 출력하는 간단한 예제입니다.  
 
-# 2. [
+- Explanation  
+array로 표현되는 input string과 N이 같은지 비교해보고, 같으면 결과를 출력하는 간단한 예제입니다.  
+입력의 형태가 str이기 때문에, 이를 정수로 변환하여 더하기 위해 int를 사용합니다.  
+
+# 2. [문자열 반복](https://www.acmicpc.net/problem/2675)
+- 문제  
+문자열 S를 입력받은 후에, 각 문자를 R번 반복해 새 문자열 P를 만든 후 출력하는 프로그램을 작성하시오. 즉, 첫 번째 문자를 R번 반복하고, 두 번째 문자를 R번 반복하는 식으로 P를 만들면 된다. S에는 QR Code "alphanumeric" 문자만 들어있다.  
+
+- Code  
+~~~
+def repeating(R, S):
+    P = ''
+    for letter in S:
+        P += letter*R
+    return print(P)
+~~~
+
+- Explanation
